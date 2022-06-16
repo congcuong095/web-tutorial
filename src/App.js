@@ -2,13 +2,14 @@ import './App.css';
 import React from 'react'
 import Navbar from './components/Navbar';
 import {Route, Routes} from 'react-router-dom'
-import {Switch} from 'react-router'
+import Home from './components/pages/Home';
 
 function App() {
   return (
     <div className='App'>
+      <Navbar />
       <Routes>
-        <Route path='/' element={<Navbar />} />
+        <Route path='/' element={<Home />} />
       </Routes>
     </div>
   );
